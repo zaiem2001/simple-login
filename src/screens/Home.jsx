@@ -55,7 +55,7 @@ const Home = ({ user, setUser }) => {
         "Content-Type": "application/json",
       },
     };
-    const url = `http://localhost:5000/api/users/${id}/update`;
+    const url = `https://eshop-backend-pro.herokuapp.com/api/users/${id}/update`;
 
     try {
       const { data } = await axios.put(url, userObj, config);

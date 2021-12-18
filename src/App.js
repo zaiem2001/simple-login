@@ -22,8 +22,8 @@ function App() {
   const loginHandler = async (req, userObj) => {
     const url =
       req === "login"
-        ? "http://localhost:5000/api/users/login"
-        : "http://localhost:5000/api/users/register";
+        ? "https://eshop-backend-pro.herokuapp.com/api/users/login"
+        : "https://eshop-backend-pro.herokuapp.com/api/users/register";
 
     const config = {
       headers: {
